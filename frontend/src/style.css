@@ -1,9 +1,13 @@
 :root {
-  --color-background-500: white;
-  --color-foreground-500: black;
+  --color-background-400: #fffaf3;
+  --color-background-500: #faf4ed;
+  --color-background-600: #f2e9e1;
 
-  --color-primary-500: #1e66f5;
-  --color-secondary-500: #7287fd;
+  --color-foreground-300: #9893a5;
+  --color-foreground-400: #797593;
+  --color-foreground-500: #575279;
+
+  --color-primary-500: #56949f;
 }
 
 *,
@@ -16,11 +20,15 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-background-500);
+}
+
+button {
+  cursor: pointer;
 }
 
 p {

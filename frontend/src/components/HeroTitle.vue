@@ -1,6 +1,6 @@
 <script setup lang="ts">
 interface Props {
-  title: string
+  title: string;
 }
 
 const props = defineProps<Props>();
@@ -11,3 +11,13 @@ const props = defineProps<Props>();
     {{ props.title }}
   </h1>
 </template>
+
+<style scoped>
+h1 {
+  color: var(--color-primary-500);
+  font-size: 4rem;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+</style>
