@@ -15,9 +15,16 @@ const props = defineProps<Props>();
 <style scoped>
 h1 {
   color: var(--color-primary-500);
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   padding: 0;
   margin: 0;
+  text-align: center;
+}
+
+@media (width >=48rem) {
+  h1 {
+    font-size: 4rem;
+  }
 }
 </style>

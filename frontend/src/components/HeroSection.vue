@@ -29,7 +29,8 @@ a {
 
 p {
   color: var(--color-foreground-400);
-  font-size: 1.25rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 button {
@@ -42,6 +43,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-inline: 2.25rem;
 }
 
 .clipboard {
@@ -58,10 +60,25 @@ button {
 
 .api-url {
   background-color: var(--color-background-600);
-  font-size: 1rem;
+  font-size: 0.80rem;
   border-radius: 0.2rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-inline: 1.5rem;
+  text-align: center;
+}
+
+@media (width >=48rem) {
+  p {
+    font-size: 1.25rem;
+  }
+
+  .clipboard-button {
+    font-size: 1.5rem;
+  }
+
+  .api-url {
+    font-size: 1rem;
+  }
 }
 </style>
