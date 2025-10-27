@@ -1,0 +1,28 @@
+:root {
+  --color-background-500: white;
+  --color-foreground-500: black;
+
+  --color-primary-500: #1e66f5;
+  --color-secondary-500: #7287fd;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background-500);
+}
+
+p {
+  color: var(--color-foreground-500);
+}
