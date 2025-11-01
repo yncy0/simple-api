@@ -9,5 +9,5 @@ COPY . .
 RUN bun run build 
 
 EXPOSE 3000
-CMD ["bun", "run"]
+CMD ["bun", "run", "dev"]
 
