@@ -1,0 +1,18 @@
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: go-dock:latest
+    ports:
+      - 8080:8080
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: vue-dock:latest
+    ports:
+      - 5173:5173
+    depends_on:
+      - backend
